@@ -10,10 +10,6 @@ public class MyLinkedList {
         head = new Node(data);
     }
 
-    public void addFirst(int i) {
-
-    }
-
     private class Node{
         private Node next;
         private Object data;
@@ -41,7 +37,7 @@ public class MyLinkedList {
         numNodes++;
     }
 
-    public void addFist(Object data) {
+    public void addFirst(Object data) {
         Node temp = head;
         head = new Node(data);
         head.next = temp;
